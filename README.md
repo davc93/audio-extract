@@ -22,6 +22,12 @@ choco install ffmpeg
 # on Windows using Scoop (https://scoop.sh/)
 scoop install ffmpeg
 
+# fedora
+
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install ffmpeg
+sudo dnf -y install ffmpeg-devel
 ```
 
 create virutal env and activate
@@ -31,12 +37,15 @@ python -m venv env
 source env/bin/activate
 ```
 
-install dependecies
+install dependecies and setup rust
 
 ```sh
 pip install -r requirements.txt
+pip install setuptools-rust
 
 ```
+
+## [more info](https://github.com/openai/whisper) about whisper
 
 ## usage
 
