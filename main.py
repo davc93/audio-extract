@@ -12,5 +12,4 @@ def youtubeTranscription():
     result = model.transcribe(f'files/{name}.mp4')
     with open(f'files/outputs/{name}.txt', 'w') as f:
         f.write(result["text"])
-        print(f)
 youtubeTranscription()

@@ -42,6 +42,7 @@ install dependecies and setup rust
 ```sh
 pip install git+https://github.com/openai/whisper.git
 pip install setuptools-rust
+pip install pytube
 
 ```
 
