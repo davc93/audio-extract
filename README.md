@@ -40,7 +40,7 @@ source env/bin/activate
 install dependecies and setup rust
 
 ```sh
-pip install -r requirements.txt
+pip install git+https://github.com/openai/whisper.git
 pip install setuptools-rust
 
 ```

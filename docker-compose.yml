@@ -1,0 +1,7 @@
+services:
+  app-transcription:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    
